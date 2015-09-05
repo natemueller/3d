@@ -12,6 +12,9 @@ shaft_diameter = min_diameter - 1;
 pin_height = hole_depth * 2/3;
 cap_height = pin_height - hole_depth*0.5;
 
+screw_head_diameter = 12;
+screw_shaft_diameter = 5;
+
 $fs = 0.1;
 
 module pin() {
@@ -22,8 +25,8 @@ module pin() {
 }
 
 module screw_hole() {
-  translate([0, 0, 1]) cylinder(h = 2, r = 4);
-  translate([0, 0, -1]) cylinder(h = plate_thickness + 2, r = 1.5);
+  translate([0, 0, 1]) cylinder(h = 2, d = screw_head_diameter);
+  translate([0, 0, -1]) cylinder(h = plate_thickness + 2, d = screw_shaft_diameter);
 }
 
 rotate([90, 0, 0]) {
