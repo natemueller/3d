@@ -2,9 +2,9 @@ large_pin_diameter = 5.2;
 large_pin_notch = 3.9;
 large_pin_height = 11.5;
 
-small_pin_diameter = 3.5;
+small_pin_diameter = 3;
 small_pin_height = 14;
-small_pin_cross_width = 1.5;
+small_pin_cross_width = 1;
 small_pin_cross_height = 5;
 
 pole_0_height = 112;
